@@ -4,7 +4,7 @@ Un scanner de vulnérabilités web léger, modulaire et extensible, entièrement
 
 Ce projet a été pensé pour s'intégrer dans des workflows de cybersécurité modernes : les résultats sont générés au format **JSON structuré**, facilitant leur ingestion par des plateformes d'analyse Blue Team, des SIEM, ou des solutions d'orchestration de type SOAR.
 
-## ✨ Fonctionnalités
+##  Fonctionnalités
 
 *   **Architecture MVC stricte :** Séparation claire entre les payloads (Modèle), la logique d'attaque (Contrôleur) et l'affichage (Vue).
 *   **Détection d'Injections SQL (SQLi) :** Analyse des réponses HTTP pour identifier les erreurs de syntaxe de base de données (ex: MySQL/MariaDB) et les fuites de données.
@@ -30,7 +30,7 @@ Ce projet a été pensé pour s'intégrer dans des workflows de cybersécurité 
 └── README.md
 ```
 
-## 🚀 Prérequis
+##  Prérequis
 
 *   **Java Development Kit (JDK) 11** ou supérieur (utilise `java.net.http.HttpClient`).
 *   **Docker** (recommandé pour déployer une application cible vulnérable comme DVWA).
@@ -86,7 +86,7 @@ java -cp bin Main
 ]
 ```
 
-## 👨‍💻 Auteur
+##  Auteur
 **Basile DUFRENE**  
 *Projet développé dans le cadre d'études et de recherches en Cybersécurité.*
 

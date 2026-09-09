@@ -39,7 +39,7 @@ Ce projet a été pensé pour s'intégrer dans des workflows de cybersécurité 
 
 ### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/VOTRE_NOM_UTILISATEUR/java-web-scanner.git
+git clone https://github.com/Basile-Dufrene/java-web-scanner.git
 cd java-web-scanner
 ```
 

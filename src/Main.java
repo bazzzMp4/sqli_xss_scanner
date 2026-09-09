@@ -13,7 +13,7 @@ public class Main {
 
         ScannerController controller = new ScannerController(model, view);
 
-        // 2. Scan d'une page interne protégée (ex: XSS Reflected)
+        // 2. Scan d'une page interne protégée (ex: XSS Reflected) : à décommenter pour un scanner xss
         //String targetUrl = "http://localhost/vulnerabilities/xss_r/";
         //controller.startScan(targetUrl, "name", false);
 

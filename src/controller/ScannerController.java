@@ -55,7 +55,7 @@ public class ScannerController {
             }
         }
 
-        // 2. Scan XSS (inchangé, sans le debug avancé pour ne pas polluer)
+        // 2. Scan XSS (sans le debug avancé pour ne pas polluer)
         for (String payload : model.getXssPayloads()) {
             view.displayScanningProgress(targetUrl, payload);
             String response = isPost ? sendPost(targetUrl, paramName, payload) : sendGet(targetUrl, paramName, payload);
@@ -93,7 +93,7 @@ public class ScannerController {
 
     private String sendPost(String baseUrl, String paramName, String payload) {
         try {
-            // Logique POST inchangée
+            // Logique POST
             String encodedData = paramName + "=" + URLEncoder.encode(payload, StandardCharsets.UTF_8.toString());
             HttpRequest.Builder requestBuilder = HttpRequest.newBuilder()
                     .uri(URI.create(baseUrl))
@@ -115,10 +115,9 @@ public class ScannerController {
 
     private boolean isSqlVulnerable(String responseBody) {
         String lowerBody = responseBody.toLowerCase();
-        // C'est ICI qu'était le problème ! On cherche "sql syntax" et plus "syntax error"
         return lowerBody.contains("sql syntax") ||
                 lowerBody.contains("mysqli_") ||
-                lowerBody.contains("surname:"); // Mot clé confirmant l'extraction de la base sur DVWA
+                lowerBody.contains("surname:"); 
     }
 
     private boolean isXssVulnerable(String responseBody, String payload) {

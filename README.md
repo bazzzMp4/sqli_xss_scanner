@@ -1,4 +1,4 @@
-# 🛡️ Java MVC Vulnerability Scanner
+#  Java MVC Vulnerability Scanner
 
 Un scanner de vulnérabilités web léger, modulaire et extensible, entièrement développé en Java natif. Conçu selon l'architecture **Modèle-Vue-Contrôleur (MVC)**, cet outil permet d'auditer la sécurité des applications web en identifiant des failles critiques telles que les Injections SQL et le Cross-Site Scripting (XSS).
 
@@ -12,7 +12,7 @@ Ce projet a été pensé pour s'intégrer dans des workflows de cybersécurité 
 *   **Gestion de Sessions Authentifiées :** Support complet des cookies de session (ex: `PHPSESSID`) pour auditer les espaces restreints.
 *   **Génération de Rapports JSON :** Export horodaté (ISO 8601) incluant le type de vulnérabilité, la sévérité, l'URL affectée et le paramètre vulnérable.
 
-## 📂 Structure du Projet
+##  Structure du Projet
 
 ```text
 📁 Java-Web-Scanner/
@@ -60,7 +60,7 @@ model.setSessionCookie(myCookies);
 ```
 3. Définissez l'URL cible et le paramètre à tester.
 
-## 🎯 Compilation et Utilisation
+##  Compilation et Utilisation
 
 Compilez l'ensemble du projet en respectant la structure des packages :
 ```bash

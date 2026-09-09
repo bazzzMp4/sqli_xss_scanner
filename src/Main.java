@@ -8,7 +8,7 @@ public class Main {
         ScannerView view = new ScannerView();
 
         // 1. Définition des cookies de session pour DVWA
-        String myCookies = "PHPSESSID=n8mo6ol765lnslipmtchj671d6; security=low";
+        String myCookies = "PHPSESSID=votre_valeur_ici; security=low";
         model.setSessionCookie(myCookies);
 
         ScannerController controller = new ScannerController(model, view);

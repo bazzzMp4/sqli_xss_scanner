@@ -35,7 +35,7 @@ Ce projet a été pensé pour s'intégrer dans des workflows de cybersécurité 
 *   **Java Development Kit (JDK) 11** ou supérieur (utilise `java.net.http.HttpClient`).
 *   **Docker** (recommandé pour déployer une application cible vulnérable comme DVWA).
 
-## 🛠️ Installation et Déploiement
+##  Installation et Déploiement
 
 ### 1. Cloner le dépôt
 ```bash

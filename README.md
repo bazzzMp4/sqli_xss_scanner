@@ -87,7 +87,7 @@ java -cp bin Main
 ```
 
 ##  Auteur
-**Basile DUFRENE**  
+**bazzzMp4**  
 *Projet développé dans le cadre d'études et de recherches en Cybersécurité.*
 
 ## ⚠️ Avertissement Légal
